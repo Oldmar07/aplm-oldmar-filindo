@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_yellow"
+    android:padding="12dip"
+    tools:context=".DialogActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_text"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/font_medium"
+        android:textColor="@color/light_yellow"
+        android:paddingBottom="12dip"
+        />
+
+    <Button
+        android:id="@+id/btn_finish_dialog"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/btn_finish_dialog_label"
+        android:layout_gravity="center_horizontal"
+        android:onClick="finishDialog"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
