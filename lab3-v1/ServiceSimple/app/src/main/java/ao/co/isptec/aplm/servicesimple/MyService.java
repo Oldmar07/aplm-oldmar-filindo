@@ -21,8 +21,9 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Toast.makeText(this, "Service Started", Toast.LENGTH_SHORT).show();
-        return START_STICKY; // read more on: http://developer.android.com/reference/android/app/Service.html
+        int n = ((CounterApplication) getApplication()).getStartCount();
+        Toast.makeText(this, "Service Started - contador: " + n, Toast.LENGTH_SHORT).show();
+        return START_STICKY;
     }
 
     @Override

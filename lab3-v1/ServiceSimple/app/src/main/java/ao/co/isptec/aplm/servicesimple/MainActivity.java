@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Start the service
     public void startService(View view) {
+        ((CounterApplication) getApplication()).incrementStartCount();
         startService(new Intent(this, MyService.class));
     }
 
